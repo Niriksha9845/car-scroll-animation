@@ -1,0 +1,135 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  background-color: #121212;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+
+.section {
+  height: 250vh;
+  position: relative;
+  background: #121212;
+}
+
+.track {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d1d1d1;
+  overflow: hidden;
+  position: relative;
+}
+
+.road {
+  width: 100vw;
+  height: 220px;
+  background-color: #1e1e1e;
+  position: relative;
+  overflow: hidden;
+}
+
+.car {
+  height: 220px !important;
+  width: auto !important;
+  max-width: none !important;
+  max-height: 220px !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  pointer-events: none;
+  object-fit: contain;
+}
+
+.trail {
+  height: 220px;
+  background: #45db7d;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 0;
+}
+
+.text-box {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+  padding: 24px 28px;
+  border-radius: 14px;
+  position: absolute;
+  z-index: 20;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  width: 280px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.num-box {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+#box1 {
+  background: #def54f;
+  color: #111111;
+  top: 4vh;
+  right: calc(8vw + 295px);
+}
+
+#box3 {
+  background: #2b2b2b;
+  color: #ffffff;
+  top: 4vh;
+  right: 8vw;
+}
+
+#box2 {
+  background: #6ac9ff;
+  color: #111111;
+  bottom: 4vh;
+  right: calc(8vw + 295px);
+}
+
+#box4 {
+  background: #fa7328;
+  color: #111111;
+  bottom: 4vh;
+  right: 8vw;
+}
+
+.value-add {
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: clamp(3.5rem, 8.5vw, 7.5rem);
+  font-weight: 900;
+  position: absolute;
+  left: 3%;
+  z-index: 5;
+  display: flex;
+  gap: 0.3rem;
+  white-space: nowrap;
+}
+
+.value-letter {
+  color: #111111;
+  opacity: 0;
+}
+
+
+
