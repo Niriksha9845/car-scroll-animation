@@ -17,8 +17,8 @@ export default function HeroSection() {
   const valueAddRef = useRef<HTMLDivElement>(null);
   const letterRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
-  const carImageSrc = `${basePath}/McLaren 720S 2022 top view.png`;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || (process.env.NODE_ENV === "production" ? "/car-scroll-animation" : "");
+  const carImageSrc = `${basePath}/car.png`;
 
   useEffect(() => {
     if (typeof window === "undefined") return;

@@ -32,7 +32,7 @@ jobs:
 
       - name: Build site
         env:
-          NEXT_PUBLIC_BASE_PATH: ${{ secrets.NEXT_PUBLIC_BASE_PATH }}
+          NEXT_PUBLIC_BASE_PATH: /car-scroll-animation
         run: npm run build
 
       - name: Upload Pages artifact
