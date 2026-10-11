@@ -43,7 +43,7 @@ Built with **Next.js (App Router)**, **React**, **TypeScript**, **Tailwind CSS**
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/YOUR_USERNAME/car-scroll-animation.git
+   git clone https://github.com/Niriksha9845/car-scroll-animation.git
    cd car-scroll-animation
    ```
 
